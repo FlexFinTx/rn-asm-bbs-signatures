@@ -1,0 +1,35 @@
+module.exports = {
+  presets: ['module:metro-react-native-babel-preset'],
+  plugins: [
+    [
+      'babel-plugin-rewrite-require',
+      {
+        aliases: {
+          crypto: 'react-native-crypto',
+          stream: 'stream-browserify',
+          zlib: 'browserify-zlib',
+          console: 'console-browserify',
+          constants: 'constants-browserify',
+          dns: 'dns.js',
+          net: 'react-native-tcp',
+          domain: 'domain-browser',
+          http: '@tradle/react-native-http',
+          https: 'https-browserify',
+          os: 'react-native-os',
+          path: 'path-browserify',
+          querystring: 'querystring-es3',
+          fs: 'react-native-level-fs',
+          _stream_transform: 'readable-stream/transform',
+          _stream_readable: 'readable-stream/readable',
+          _stream_writable: 'readable-stream/writable',
+          _stream_duplex: 'readable-stream/duplex',
+          _stream_passthrough: 'readable-stream/passthrough',
+          dgram: 'react-native-udp',
+          timers: 'timers-browserify',
+          tty: 'tty-browserify',
+          vm: 'vm-browserify',
+        },
+      },
+    ],
+  ],
+};
