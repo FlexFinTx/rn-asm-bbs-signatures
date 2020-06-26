@@ -2,6 +2,10 @@
 
 This repo houses a sample React Native app which uses `bbs-signatures` from [MATTR Global](https://github.com/mattrglobal/bbs-signatures). It is using the `asm.js` fallback as WASM is unsupported in React Native currently.
 
+## Output
+
+![Output](app_screenshot.jpg 'App Screenshot')
+
 ## Setup
 
 ```
